@@ -1,0 +1,7 @@
+# Unity + Visual Studio ignores
+.vs/
+Library/
+Logs/
+Temp/
+obj/
+UserSettings/

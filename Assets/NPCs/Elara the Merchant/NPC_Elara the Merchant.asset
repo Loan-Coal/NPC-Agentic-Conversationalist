@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6de57d58a2eaa4696151dea934e3e8, type: 3}
+  m_Name: NPC_Elara the Merchant
+  m_EditorClassIdentifier: Assembly-CSharp::NPCData
+  npcName: Elara the Merchant
+  personalityTraits:
+  - friendly
+  - greedy
+  - talkative
+  backstory: Elara is a traveling merchant from the eastern lands. She has been trading
+    exotic goods across the realm for over 20 years. Despite her cheerful demeanor,
+    she always has an eye on profit and rarely does favors without expecting something
+    in return.
+  events:
+  - {fileID: 11400000, guid: 7a21ee1c3b05b9648b4fdbd9672675b4, type: 2}
+  - {fileID: 11400000, guid: 67112ed30d480394ca3c74e2918e61f4, type: 2}
+  - {fileID: 11400000, guid: a15335b3b4975994590fef9d2750e192, type: 2}
