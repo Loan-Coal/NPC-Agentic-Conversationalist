@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6de57d58a2eaa4696151dea934e3e8, type: 3}
+  m_Name: NPC_Garrick
+  m_EditorClassIdentifier: Assembly-CSharp::NPCData
+  npcName: Garrick
+  role: Guard
+  portrait: {fileID: 0}
+  personalityTraits:
+  - dutiful
+  - stern
+  - observant
+  - protective
+  quirks:
+  - stands with military posture always
+  - scans surroundings habitually
+  - never removes his blade
+  backstory: A retired soldier who patrols the village walls. Saw action in the border
+    wars and now keeps watch over the peaceful town, haunted by old memories.
+  relationships: []
+  events: []

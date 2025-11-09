@@ -97,21 +97,24 @@ public class DialogueManager : MonoBehaviour
        string responseText = request.downloadHandler.text;
             Debug.Log($"[DialogueManager] Received response:\n{responseText}");
 
-   try
-        {
-      var response = JsonUtility.FromJson<ConversationResponse>(responseText);
+      try
+            {
+                var response = JsonUtility.FromJson<ConversationResponse>(responseText);
 
-          if (!string.IsNullOrEmpty(response.reply))
-        {
-     // Pass portrait and animator to UI
-            uiManager.ShowReply(response.reply, npcData.portrait, currentNPCAnimator);
-  }
-     else
+                if (!string.IsNullOrEmpty(response.dialogue))
                 {
-         Debug.LogWarning("DialogueManager: Response contained empty reply.");
-  uiManager.ShowReply("...", npcData.portrait, currentNPCAnimator);
-        }
-  }
+                    // Log emotion and action (optional, for debugging)
+                    Debug.Log($"[DialogueManager] Emotion: {response.emotion}, Action: {response.action}");
+
+                    // Pass dialogue, portrait and animator to UI
+                    uiManager.ShowReply(response.dialogue, npcData.portrait, currentNPCAnimator);
+                }
+                else
+                {
+                    Debug.LogWarning("DialogueManager: Response contained empty dialogue.");
+                    uiManager.ShowReply("...", npcData.portrait, currentNPCAnimator);
+                }
+            }
             catch (Exception ex)
           {
             Debug.LogError($"DialogueManager: Failed to parse response JSON: {ex.Message}");
@@ -156,5 +159,7 @@ public class ConversationPayload
 [Serializable]
 public class ConversationResponse
 {
-    public string reply;
+    public string dialogue;  
+    public string emotion;   
+    public string action;    
 }

@@ -1,0 +1,79 @@
+{
+  "npcs": [
+    {
+      "name": "Elara",
+ "role": "Merchant",
+      "model_folder": "Merchant",
+      "personality_traits": ["friendly", "shrewd", "talkative", "ambitious"],
+      "quirks": ["always counting coins in her head", "remembers every customer's purchase", "hums old trading songs"],
+      "backstory": "Runs the stall near the square; once travelled widely across distant lands, trading exotic goods. Now settled but still dreams of the open road.",
+      "behavior": "stationary",
+      "relationships": [
+        {"npc_name": "Garrick", "affinity": 0.6, "tag": "regular_customer", "notes": "He buys healing supplies for the guard barracks"},
+        {"npc_name": "Theron", "affinity": 0.3, "tag": "supplier", "notes": "Provides fresh produce, but haggles too much"},
+        {"npc_name": "Cedric", "affinity": 0.7, "tag": "friend", "notes": "Repairs her tools and cart wheels"}
+      ]
+},
+    {
+      "name": "Maris",
+      "role": "Healer",
+      "model_folder": "Healer",
+      "personality_traits": ["calm", "wise", "empathetic", "patient"],
+      "quirks": ["speaks softly and slowly", "always carries dried herbs", "quotes old healing proverbs"],
+      "backstory": "Learned herbal lore from her grandmother in the hills. Tends to the sick and wounded, asking only what people can afford to pay.",
+      "behavior": "stationary",
+      "relationships": [
+     {"npc_name": "Garrick", "affinity": 0.5, "tag": "frequent_patient", "notes": "Treats his injuries from patrol duty"},
+        {"npc_name": "Elara", "affinity": 0.4, "tag": "acquaintance", "notes": "Buys rare herbs from her sometimes"},
+ {"npc_name": "Theron", "affinity": 0.8, "tag": "old_friend", "notes": "Childhood friends; he brings her fresh ingredients"}
+      ]
+    },
+    {
+      "name": "Theron",
+      "role": "Farmer",
+      "model_folder": "Farmer",
+      "personality_traits": ["honest", "tired", "patient", "stubborn"],
+  "quirks": ["wipes hands on apron constantly", "complains about the weather", "early riser, greets everyone with dawn observations"],
+      "backstory": "Works the fields outside the village; comes to town for supplies. Lost his wife years ago but keeps farming the land they worked together.",
+      "behavior": "wander",
+      "relationships": [
+        {"npc_name": "Elara", "affinity": 0.3, "tag": "vendor", "notes": "Sells produce to her, argues over prices"},
+        {"npc_name": "Maris", "affinity": 0.8, "tag": "old_friend", "notes": "Knew each other as children"},
+        {"npc_name": "Cedric", "affinity": 0.2, "tag": "blacksmith", "notes": "Buys tools from him"}
+      ]
+    },
+    {
+  "name": "Garrick",
+ "role": "Guard",
+      "model_folder": "Guard",
+      "personality_traits": ["dutiful", "stern", "observant", "protective"],
+      "quirks": ["stands with military posture always", "scans surroundings habitually", "never removes his blade"],
+    "backstory": "A retired soldier who patrols the village walls. Saw action in the border wars and now keeps watch over the peaceful town, haunted by old memories.",
+      "behavior": "patrol",
+      "relationships": [
+        {"npc_name": "Cedric", "affinity": 0.6, "tag": "respect", "notes": "Admires his craftsmanship; Cedric maintains his armor"},
+        {"npc_name": "Maris", "affinity": 0.5, "tag": "healer", "notes": "She patches him up after patrol incidents"},
+    {"npc_name": "Elara", "affinity": 0.6, "tag": "regular", "notes": "Buys supplies from her merchant stall"}
+      ]
+    },
+    {
+   "name": "Cedric",
+  "role": "Blacksmith",
+      "model_folder": "Smith",
+      "personality_traits": ["tough", "hardworking", "blunt", "perfectionist"],
+      "quirks": ["speaks loudly from years near the forge", "judges people by their tools", "hates rust with a passion"],
+      "backstory": "Said to have forged swords for the city guard. Now runs the village smithy, taking pride in every piece of metalwork, from nails to blades.",
+      "behavior": "stationary",
+      "relationships": [
+ {"npc_name": "Garrick", "affinity": 0.6, "tag": "client", "notes": "Regular customer for armor maintenance"},
+{"npc_name": "Elara", "affinity": 0.7, "tag": "friend", "notes": "Repairs her cart and metal goods"},
+        {"npc_name": "Theron", "affinity": 0.3, "tag": "customer", "notes": "Sells him farming tools"}
+      ]
+    }
+  ],
+  "animation_mapping": {
+    "idle_pattern": "@Idle",
+ "walk_pattern": "@Walk",
+    "talk_pattern": "@Talk"
+  }
+}

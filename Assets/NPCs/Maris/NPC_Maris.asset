@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6de57d58a2eaa4696151dea934e3e8, type: 3}
+  m_Name: NPC_Maris
+  m_EditorClassIdentifier: Assembly-CSharp::NPCData
+  npcName: Maris
+  role: Healer
+  portrait: {fileID: 0}
+  personalityTraits:
+  - calm
+  - wise
+  - empathetic
+  - patient
+  quirks:
+  - speaks softly and slowly
+  - always carries dried herbs
+  - quotes old healing proverbs
+  backstory: Learned herbal lore from her grandmother in the hills. Tends to the
+    sick and wounded, asking only what people can afford to pay.
+  relationships: []
+  events: []
